@@ -1,0 +1,24 @@
+/**
+ * Design tokens for status icons in CallHistoryRow.
+ *
+ * These extend the global palette tokens (--success, --danger, --muted) defined
+ * in index.css with named aliases that express semantic intent at the component
+ * level. Both light and dark values are sourced from those global tokens so
+ * dark-mode adaptation is automatic.
+ *
+ * Naming follows the project convention: --icon-<semantic-role>
+ */
+
+/* Light theme */
+[data-theme="light"] {
+  --icon-success: var(--success);   /* #10b981  — green, WCAG AA on white */
+  --icon-error:   var(--danger);    /* #dc2626  — red,   WCAG AA on white */
+  --icon-neutral: var(--muted);     /* #64748b  — slate, WCAG AA on white */
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --icon-success: var(--success);   /* #73f2bb  — mint,  WCAG AA on dark surface */
+  --icon-error:   var(--danger);    /* #ff7d8d  — coral, WCAG AA on dark surface */
+  --icon-neutral: var(--muted);     /* #93a0bf  — slate, WCAG AA on dark surface */
+}

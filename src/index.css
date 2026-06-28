@@ -2423,11 +2423,11 @@ code,
 }
 
 .status-cell.success {
-    color: var(--success);
+    color: var(--icon-success, var(--success));
 }
 
 .status-cell.error {
-    color: var(--danger);
+    color: var(--icon-error, var(--danger));
 }
 
 .expanded-details {
